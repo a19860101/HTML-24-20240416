@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@400;900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:wght@200;400;900&display=swap');
+        body {
+            font-family: 'Platypi','Noto Serif TC'
+        }
+        .serif {
+            font-family: 'Platypi','Noto Serif TC';
+        }
+        .sans {
+            font-family: 'Poppins','Noto Sans TC';
+        }
         h1 {
             text-align: center;
+            letter-spacing: 2px;
         }
         p {
             color: #d13b3b;   
@@ -14,6 +25,23 @@
             /* underline, overline, line-through, none  */
             text-align: justify;
             /* left, center, right, justify */
+
+            line-height: 1.5rem;
+            /* letter-spacing: 10px; */
+            /* word-spacing: 15px; */
+
+            font-size: 1rem;
+            font-weight: normal;
+            /* normal, bold, bolder, lighter, 100-900 */
+            font-style: normal;
+            /* normal, italic */
+
+            /* font-family: 'Platypi','Noto Serif TC' */
+            /* 
+                sans-serif 非襯線字
+                serif 襯線字
+                monospace 等寬字
+            */
         }
         a {
             color: orange;
@@ -22,7 +50,7 @@
     </style>
 </head>
 <body>
-    <h1>CSS Text</h1>
+    <h1 class="sans">CSS Text</h1>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam fugit facere, beatae similique quaerat blanditiis nostrum maiores odit rerum dignissimos exercitationem ipsum molestias ab repellendus unde et enim accusantium!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam fugit facere, beatae similique quaerat blanditiis nostrum maiores odit rerum dignissimos exercitationem ipsum molestias ab repellendus unde et enim accusantium!
@@ -40,6 +68,6 @@
         <li>清單</li>
         <li>清單</li>
     </ul>
-    <a href="#">link</a>
+    <a href="#" class="sans">link</a>
 </body>
 </html>

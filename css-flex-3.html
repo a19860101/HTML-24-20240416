@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ccc;
+            display: flex;
+
+            justify-content: space-around;
+            /* 
+                start, center, end
+                space-between ,space-around, space-evenly
+            */
+        }
+        .flex {
+            width: 300px;
+            padding: 15px;
+        }
+
+        .container-2 {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            /* 
+                start, center, end
+                stretch, baseline
+            */
+        }
+        .flex-2 {
+            width: 600px;
+            padding: 15px;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <h2>flex 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem necessitatibus tempore, quaerat ducimus inventore!
+            </p>
+        </div>
+        <div class="flex">
+            <h2>flex 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem necessitatibus tempore, quaerat ducimus inventore!
+            </p>
+        </div>
+        <div class="flex">
+            <h2>flex 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem necessitatibus tempore, quaerat ducimus inventore!
+            </p>
+        </div>
+        <div class="flex">
+            <h2>flex 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem necessitatibus tempore, quaerat ducimus inventore!
+            </p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="flex-2">
+            <img src="https://picsum.photos/id/40/800/600" alt="">
+        </div>
+        <div class="flex-2">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque non nemo nostrum voluptatibus temporibus reiciendis!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

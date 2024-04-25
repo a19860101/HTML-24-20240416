@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-direction: column-reverse; */
+            /* row, column, row-reverse, column-reverse */
+            flex-flow: wrap row;
+        }
+        .flex {
+            width: 300px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <h2>flex 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus reiciendis aut qui consequatur delectus ipsam minus perferendis quo quidem.
+            </p>
+        </div>
+        <div class="flex">
+            <h2>flex 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus reiciendis aut qui consequatur delectus ipsam minus perferendis quo quidem.
+            </p>
+        </div>
+        <div class="flex">
+            <h2>flex 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus reiciendis aut qui consequatur delectus ipsam minus perferendis quo quidem.
+            </p>
+        </div>
+        <div class="flex">
+            <h2>flex 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus reiciendis aut qui consequatur delectus ipsam minus perferendis quo quidem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

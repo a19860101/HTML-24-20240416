@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        img {
+            width: 100%;
+            display: block;
         }
         body {
             font-family: 'Nunito','Noto Sans TC';
@@ -19,18 +27,165 @@
             display: flex;
             justify-content: space-between;
             
-            background-color: #00224D;
-            padding: 20px 15px;
+            background-color: #00214db0;
+            padding: 10px 15px;
+
+            backdrop-filter: blur(8px);
+
+            position: fixed;
+            top: 0;
         }
         nav a {
             text-decoration: none;
             color: #FF204E;
             letter-spacing: 1px;
             font-weight: bold;
+            padding: 8px 12px;
+            border-radius:8px;
+            transition: 300ms;
+        }
+        .nav-menu a:hover {
+            color: #ffffff;
+            background-color: #FF204E;
+           
         }
         .nav-menu {
             display: flex;
-            gap:15px;
+            gap:5px;
+        }
+
+        header {
+            width: 100%;
+            /* height: 600px; */
+            aspect-ratio: 16 / 10;
+            max-height:650px;
+            background-color: #ccc;
+
+            /* background-image: url('https://picsum.photos/id/40/1200/900');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            overflow: hidden; */
+
+        }
+        header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #about {
+            width: 100%;
+            padding-top:120px;
+            padding-bottom: 120px;
+            color: rgba(0, 0, 0, 0.8);
+            background-color: #ecf3fb;
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .about-col {
+            width: 600px;
+            padding: 15px;
+        }
+        #about .container {
+            align-items: center;
+        }
+        #about h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        #about p {
+            margin-bottom: 20px;
+        }
+        #about li {
+            list-style-position: inside;
+            list-style-type:'\2731  '
+        }
+        #about img {
+            border-radius: 15px;
+        }
+
+        #folio {
+            width: 100%;
+            padding-top:120px;
+            padding-bottom: 120px;
+            background-color: #d5dfea;
+        }
+        .folio-col {
+            width: 240px;
+            padding: 5px;
+        }
+        #folio img {
+            border-radius: 10px;
+        }
+        #folio h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgba(0, 0, 0, 0.8);
+
+        }
+
+        #contact {
+            width: 100%;
+            padding-top:120px;
+            padding-bottom: 120px;
+            color: rgba(0, 0, 0, 0.8);
+            background-color: #ecf3fb;
+        }
+        .contact-item {
+            width: 400px;
+            text-align: center;
+        }
+        #contact i {
+            color: #00224D;
+        }
+        .contact-icon {
+            width: 140px;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: auto;
+            background-color: #d5dfea;
+            border: 5px solid #4c729a;
+            margin-bottom: 20px;
+        }
+        #contact h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgba(0, 0, 0, 0.8);
+
+        }
+        footer {
+            background-color: #00224D;
+            color: #FF204E;
+            text-align: center;
+            padding: 15px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .gotop {
+            width: 50px;
+            height: 50px;
+            background-color: #ff204d81;
+            backdrop-filter: blur(5px);
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -38,10 +193,88 @@
     <nav>
         <a href="#">Logo</a>
         <div class="nav-menu">
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#folio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
+    <header>
+        <img src="https://picsum.photos/id/40/1200/900" alt="">
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="about-col">
+                <img src="https://picsum.photos/id/237/600" alt="">
+            </div>
+            <div class="about-col">
+                <h3>關於 - About</h3>
+                <p>
+                    儀器最初物流，給他確實溫暖回家圖象顏色，證件配置我只以來後來許可垃圾，處於才是台中如同房地產，一笑。
+                </p>
+                <ul>
+                    <li>平面設計</li>
+                    <li>網站開發</li>
+                    <li>影片剪輯</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="folio">
+        <h2>作品集 - Folio</h2>
+        <div class="container">
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/43/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/13/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/23/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/33/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/53/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/63/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/73/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/83/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/93/400/300" alt="">
+            </div>
+            <div class="folio-col">
+                <img src="https://picsum.photos/id/82/400/300" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>聯絡我 - Contact</h2>
+        <div class="container">
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope fa-4x"></i></div>
+                <div>asdf@gamil.com</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-square-instagram fa-4x"></i></div>
+                <div>@asdf234</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-square-facebook fa-4x"></i></div>
+                <div>asdfasdf12345</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Zac&copy;All Rights Reserved.
+    </footer>
+    <a href="#" class="gotop"><i class="fa-solid fa-chevron-up fa-1x"></i></a>
 </body>
 </html>
